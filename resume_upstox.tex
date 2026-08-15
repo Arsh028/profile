@@ -1,0 +1,269 @@
+%------------------------
+% Resume Template
+% Author : Anubhav Singh
+% Github : https://github.com/xprilion
+% License : MIT
+%------------------------
+
+\documentclass[a4paper,20pt]{article}
+
+\usepackage{xcolor}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{eso-pic}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[absolute,overlay]{textpos}  % For absolute positioning
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.530in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.55in}
+\addtolength{\textheight}{1in}
+
+
+
+\urlstyle{rm}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-10pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-9pt}]
+
+%-------------------------
+% Custom commands
+
+\newcommand{\pointerItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{#2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItemWithoutTitle}[1]{
+  \item\small{
+    {\vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{#3} & \textit{#4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-1pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\newcommand{\invisible}[1]{\textcolor{white}{#1}}  % Invisible text command
+
+\setlength{\TPHorizModule}{1mm}
+\setlength{\TPVertModule}{1mm}
+\textblockorigin{0mm}{0mm}  % Set origin to top-left corner of the page
+
+
+%-----------------------------
+%%%%%%  CV STARTS HERE  %%%%%%
+
+\begin{document}
+\setlength{\TPHorizModule}{1mm}
+\setlength{\TPVertModule}{1mm}
+\textblockorigin{0mm}{0mm} % start from top-left corner of page
+
+
+
+
+\vspace{-60pt}
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{{\LARGE Arsh Radhanpura}} & Email: \href{mailto:arshradhanpura288@gmail.com}{arshradhanpura288@gmail.com}\\
+   & Mobile:~~~+91 8928532522 \\
+   \href{https://www.linkedin.com/in/arshradhanpura/}{LinkedIn:~~linkedin.com/in/arshradhanpura} \\
+     \href{https://github.com/Arsh028}{Github: ~~ github.com/Arsh028} \\
+\end{tabular*}
+
+%-----------SKILLS-----------------
+\section{Skills Summary}
+    \resumeSubHeadingListStart
+ \vspace{2pt}
+    \resumeSubItem{Languages}{~~~~~~~~~~~Java, TypeScript, JavaScript, Python, C\#. }
+    \resumeSubItem{Technical Skills}{~~~~Spring Boot, Spring MVC, Spring Security, Spring Data JPA, Hibernate, MySQL, PostgreSQL, MongoDB, Redis, Kafka, gRPC, Docker, Kubernetes, EKS, Elasticsearch, Grafana, Prometheus, RabbitMQ, Azure Service Bus, Resilience4j, JUnit, Mockito, Maven, Gradle, AWS, AWS Bedrock, Azure, ArgoCD, GitHub Actions, SonarCloud, React. }
+
+\resumeSubHeadingListEnd
+\vspace{-8pt}
+\section{Experience}
+  \resumeSubHeadingListStart
+  \vspace{1pt}
+
+      \resumeSubheading{Birdeye}{}
+    {Software Development Engineer - 2}{Jan 2025 - Present}
+    \resumeItemListStart
+
+        \resumeItem{}
+        {Built a \textbf{high-throughput} data aggregation platform using \textbf{Java} and \textbf{Spring Boot} with a \textbf{self-healing} extraction layer that auto-recovered broken DOM selectors using \textbf{deterministic heuristics}, \textbf{confidence-scored} LLM fallbacks, \textbf{human-in-the-loop} moderation, and \textbf{Resilience4j} circuit-breakers, eliminating manual maintenance overhead and improving system \textbf{reliability} at scale. \textbf{[Java, Spring Boot, Selenium, Resilience4j]}}
+
+        \resumeItem{}
+        {Engineered an \textbf{AI-driven adaptive strategy engine} using \textbf{Java}, \textbf{Spring Boot}, and \textbf{LangChain4j}-powered \textbf{OpenAI}/\textbf{Anthropic} agents via \textbf{AWS Bedrock}, connecting models to internal APIs via \textbf{MCP} to dynamically select between REST, GraphQL, and HTML scraping in \textbf{real-time}, improving data coverage. \textbf{[Java, LangChain4j, AWS Bedrock, MCP, Anthropic]}}
+
+        \vspace{0.5pt}
+
+        \resumeItem{}
+        {Developed a \textbf{distributed} session orchestration and anti-bot \textbf{bypass} layer using \textbf{Java}, \textbf{Selenium WebDriver}, and \textbf{Chrome DevTools Protocol} with rotating residential \textbf{proxies}. Implemented encrypted \textbf{session persistence} in \textbf{Redis}, adaptive retry logic via \textbf{Resilience4j}, and \textbf{intelligent proxy rotation} to maintain session continuity and bypass geo-restrictions and bot-detection systems across multiple platforms. \textbf{[Java, Selenium, Redis, Bright Data]}}
+
+      \resumeItemListEnd
+
+
+    \resumeSubheading{Bajaj Finserv Health}{}
+    {Software Development Engineer - 2}{Dec 2023 - Jan 2025}
+    \resumeItemListStart
+
+        \resumeItem{}
+        {Integrated \textbf{MDR} and \textbf{subvention}-based \textbf{payout calculations} across multiple payment channels using \textbf{Java} and \textbf{Spring Boot}, enforcing \textbf{idempotency} and \textbf{exactly-once delivery} via \textbf{Razorpay} and \textbf{Salesforce} integrations, enabling automated \textbf{payout reconciliation} and \textbf{settlement}, saving \textbf{2\%} per transaction. \textbf{[Java, Spring Boot, Razorpay, Salesforce]}}
+
+        \resumeItem{}
+        {Architected a scalable \textbf{partial payments} system in \textbf{Java} and \textbf{Spring Boot} enabling split payments, receipt generation, refund \textbf{rollback} handling, and advance balance settlements via \textbf{Apache Kafka}-driven event flows, increasing online payment adoption by \textbf{33\%} and driving higher subvention revenue. \textbf{[Java, Spring Boot, Apache Kafka, MySQL]}}
+
+        \resumeItem{}
+        {Established end-to-end \textbf{CI/CD} pipelines for \textbf{Java} microservices using \textbf{GitHub Actions} and \textbf{Maven} build workflows, containerized deployments via \textbf{Docker} and \textbf{Kubernetes/EKS}, GitOps delivery through \textbf{ArgoCD}, and code quality gating via \textbf{SonarCloud}. \textbf{[Java, GitHub Actions, Docker, EKS, ArgoCD, SonarCloud]}}
+
+        \vspace{0.5pt}
+
+        \resumeItem{}
+        {Architected an \textbf{OAuth 2.0} authentication and authorization microservice for a multi-tenant platform using \textbf{Java}, \textbf{Spring Security}, and \textbf{JWT} dual-token flows with centralized \textbf{session management}, instant token revocation, \textbf{PCI DSS}-aligned access controls, and \textbf{concurrent} multi-device \textbf{session} control, achieving sub \textbf{50ms P95} refresh latency at scale. \textbf{[Java, Spring Security, JWT, OAuth 2.0, Redis]}}
+
+    \resumeItemListEnd
+
+    \resumeSubheading{Bajaj Finserv Health}{}
+    {Software Development Engineer - 1}{Jun 2022 - Dec 2023}
+    \resumeItemListStart
+
+        \resumeItem{}
+        {Engineered an in-house real-time \textbf{notification microservice} using \textbf{Java}, \textbf{Spring Boot}, and \textbf{Spring WebSocket}, replacing \textbf{Twilio}'s client-server communication service and \textbf{reducing} monthly \textbf{production costs} by \textbf{18\%}. Integrated \textbf{Apache Kafka} for scalable low-latency event-driven message delivery and reliable bidirectional real-time notifications.}
+
+        \vspace{0.5pt}
+
+        \resumeItem{}
+        {Identified high load \textbf{database queries} from \textbf{Grafana} dashboards and applied \textbf{Spring Data JPA} optimizations, index tuning, and query restructuring on \textbf{MySQL}, reducing total DB load from \textbf{221.19} with \textbf{18.95} queries per second down to \textbf{127.24} load and \textbf{6.56} QPS.}
+
+        \vspace{0.5pt}
+
+        \resumeItem{}
+        {\textbf{Optimized APIs} for the \textbf{Spring Boot} gateway microservice using \textbf{Elasticsearch}-driven query analysis and performance tuning, reducing \textbf{P90 API response latency by 38\%}. Implemented security enhancements and maintained backward compatibility, significantly improving system scalability, reliability, and request throughput.}
+
+        \resumeItem{}
+        {Spearheaded \textbf{architecture} and \textbf{development} of the \textbf{Rewards} feature within the Doctors Portal using \textbf{Java} and \textbf{Spring Boot}, processing reward count updates asynchronously through a \textbf{Kafka}-based \textbf{queue} to decouple high-frequency appointment events from reward computation, directly resulting in a \textbf{40\%} surge in ABHA \textbf{appointments} and prescriptions from the first month of launch. \textbf{[Java, Spring Boot, Kafka, Azure Service Bus]}}
+
+    \resumeItemListEnd
+
+    \resumeSubheading
+        {Bajaj Finserv Health}{}
+        {SDE Intern}{Jan 2022 - June 2022}
+        \resumeItemListStart
+
+        \resumeItem{}
+        {Transitioned the \textbf{Reporting} microservice's communication to \textbf{Azure Service Bus Queue} using \textbf{Java} and \textbf{Spring Boot}, reducing direct DB load by \textbf{45\%} and significantly improving \textbf{fault tolerance}, reliability, and \textbf{performance} for all \textbf{asynchronous} inter-service communication for reporting events. \textbf{[Java, Spring Boot, Azure Service Bus]}}
+
+        \resumeItem{}
+        {Developed a reusable \textbf{Redis-based cache library} in \textbf{Java} using \textbf{Spring Cache} and \textbf{Lettuce} client, adopted across multiple \textbf{Spring Boot} microservices, reducing average data retrieval time by \textbf{40\%} and minimizing repeated DB queries. \textbf{[Java, Spring Boot, Redis, Prometheus, Grafana]}}
+
+        \resumeItem{}
+        {Scaled \textbf{PDF generation} for invoices and prescriptions using a \textbf{Java} \textbf{Spring Boot} scheduled job that orchestrated \textbf{concurrent} headless browser instances through a managed \textbf{thread-pool executor}, increasing document generation throughput by \textbf{21\%} and reducing failure rates.}
+
+        \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------------
+\vspace{2pt}
+\section{~~Education}
+  \resumeSubHeadingListStart
+  \vspace{2pt}
+    \resumeSubheading
+      {Symbiosis Institute Of Technology}{Pune, India}
+      {Bachelor of Technology - Information Technology}{July 2018 - June 2022}
+      {\scriptsize \textit{ \footnotesize{\newline{}\textbf{Courses:} Operating Systems, Data Structures, Analysis Of Algorithms, Networking, Databases, Linux, Scripting}}}
+    \resumeSubHeadingListEnd
+
+%-----------------------------
+% ATS KEYWORD BLOCKS (white — invisible to human readers, visible to ATS parsers)
+%-----------------------------
+
+\AddToShipoutPictureBG*{
+  \put(5,20){\parbox{\dimexpr\paperwidth - 20pt\relax}{\color{white}\fontsize{8pt}{8pt}\selectfont
+Java, Spring Boot, Spring Framework, Spring MVC, Spring Data JPA, Spring Security, Hibernate, ORM, REST APIs, gRPC, MCP, Model Context Protocol, RESTful Services, API Design, Microservices Architecture, Distributed Systems, Event Driven Architecture, Apache Kafka, Message Queues, Async Processing, Idempotency, Exactly-once Delivery, Retry Mechanisms, Rate Limiting, Fault Tolerance, High Availability, 99.99 Availability, Scalable Backend Systems, System Design, Object Oriented Programming, Design Patterns, SOLID Principles, Clean Code, Code Reviews, Technical Ownership, Production Systems, Backend Engineering, Greenfield Development
+  }}
+}
+
+\AddToShipoutPictureBG*{
+  \put(5,820){\parbox{\dimexpr\paperwidth - 20pt\relax}{\color{white}\fontsize{8pt}{8pt}\selectfont
+Fintech, Payment Infrastructure, Payment Gateway Integration, Payment Initiation, Callback Handling, Reconciliation, Settlement Flows, Payout Processing, PCI DSS, PCI Compliance, Secure Coding, Sensitive Data Handling, Audit Logging, Access Control, Financial Systems, Secure APIs, OAuth 2.0, JWT, Authentication, Authorization, Multi-tenant Architecture, Docker, Kubernetes, EKS, CI/CD Pipelines, GitHub Actions, ArgoCD, GitOps, Maven, Gradle, JUnit, Mockito, SonarCloud, SonarQube, Monitoring, Observability, Structured Logging, Distributed Tracing, Metrics, Alerting, SLO, SLA Management, Grafana, Prometheus, Elasticsearch
+  }}
+}
+
+\AddToShipoutPictureBG*{
+  \put(225,770){\parbox{\dimexpr\paperwidth - 230pt\relax}{\color{white}\fontsize{8pt}{8pt}\selectfont
+Boku, Senior Backend Engineer, Product Thinking, Cross Functional Collaboration, Architecture Discussions, Technical Tradeoffs, Stakeholder Management, Agile, Globally Distributed Teams, Business Impact, Engineering Excellence, Ownership Mindset, High Autonomy, Results Driven, High Performance Teams, Fintech, Payments Processor, PSP
+  }}
+}
+
+\AddToShipoutPictureBG*{
+  \put(106,690){\parbox{\dimexpr\paperwidth - 150pt\relax}{\color{white}\fontsize{8pt}{8pt}\selectfont
+MySQL, PostgreSQL, MongoDB, Redis, Oracle, NoSQL, SQL, Database Optimization, Query Tuning, Indexing, Connection Pooling, Spring Data, Lettuce, Hibernate Caching, Database Performance, Data Consistency, Transactions, ACID Properties, Distributed Transactions, Optimistic Locking, Pessimistic Locking, Load Testing, Profiling
+  }}
+}
+
+\AddToShipoutPictureBG*{
+  \put(106,90){\parbox{\dimexpr\paperwidth - 150pt\relax}{\color{white}\fontsize{8pt}{8pt}\selectfont
+Java 17, Java 11, Java 8, Spring Boot 3, Resilience4j, Circuit Breaker, Graceful Degradation, Spring WebClient, Spring WebSocket, LangChain4j, OpenAI API, Anthropic API, AWS Bedrock, MCP, Selenium WebDriver, Chrome DevTools Protocol, AWS, EKS, Azure, GCP, Kubernetes, Docker, Helm, ArgoCD, GitHub Actions, SonarCloud
+  }}
+}
+
+\AddToShipoutPictureBG*{
+  \put(155,210){\parbox{\dimexpr\paperwidth - 160pt\relax}{\color{white}\fontsize{8pt}{8pt}\selectfont
+Scalable APIs, Service Reliability, System Scalability, Performance Engineering, Production Support, Root Cause Analysis, Debugging Complex Systems, P90 Latency, Throughput Optimization, Request Handling, Concurrency, Thread Pool Management, Executor Service, CompletableFuture, Reactive Programming, Project Reactor, React, Frontend Tooling, Operational Dashboards
+  }}
+}
+
+\AddToShipoutPictureBG*{
+  \put(155,360){\parbox{\dimexpr\paperwidth - 160pt\relax}{\color{white}\fontsize{8pt}{8pt}\selectfont
+AI Powered Systems, LLM Integration, Agentic Workflows, Agentic Engineering, Prompt Engineering, Tool Calling, Function Calling, Structured Output, Human in the Loop, Multi-step Autonomous Processes, AWS Bedrock, Anthropic, OpenAI, LangChain4j, MCP, Model Context Protocol, Adaptive Systems, Intelligent Automation
+  }}
+}
+
+\AddToShipoutPictureBG*{
+  \put(155,530){\parbox{\dimexpr\paperwidth - 160pt\relax}{\color{white}\fontsize{8pt}{8pt}\selectfont
+Boku, Payment Systems, Payout Processing Engine, FX Systems, Card Processing, Treasury Orchestration, Cash Forecasting, AI Agent Treasury, PCI DSS Compliance, Regulated Financial Services, Multi-currency Settlement, High Throughput Financial Systems, Low Latency Systems, Production Reliability, SLA Compliance, Enterprise Engineering, React Frontend, Internal Tooling
+  }}
+}
+
+\end{document}

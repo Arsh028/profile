@@ -1,0 +1,463 @@
+%------------------------
+% Resume Template
+% Author : Anubhav Singh
+% Github : https://github.com/xprilion
+% License : MIT
+%------------------------
+
+\documentclass[a4paper,20pt]{article}
+
+\usepackage{xcolor}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{eso-pic}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[absolute,overlay]{textpos}  % For absolute positioning
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.530in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.55in}
+\addtolength{\textheight}{1in}
+
+
+
+\urlstyle{rm}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-10pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-9pt}]
+
+%-------------------------
+% Custom commands
+
+\newcommand{\pointerItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+% below is for heading and then bullet points
+% \newcommand{\resumeItem}[2]{
+%   \item\small{
+%     \textbf{#1}{: #2 \vspace{-2pt}}
+%   }
+% }
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{#2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItemWithoutTitle}[1]{
+  \item\small{
+    {\vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{#3} & \textit{#4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-1pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\newcommand{\invisible}[1]{\textcolor{black}{#1}}  % Invisible text command
+
+\setlength{\TPHorizModule}{1mm}
+\setlength{\TPVertModule}{1mm}
+\textblockorigin{0mm}{0mm}  % Set origin to top-left corner of the page
+
+
+%-----------------------------
+%%%%%%  CV STARTS HERE  %%%%%%
+
+\begin{document}
+\setlength{\TPHorizModule}{1mm}
+\setlength{\TPVertModule}{1mm}
+\textblockorigin{0mm}{0mm} % start from top-left corner of page
+
+
+
+
+\vspace{-60pt}
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{{\LARGE Arsh Radhanpura}} & Email: \href{mailto:arshradhanpura288@gmail.com}{arshradhanpura1@gmail.com}\\
+   & Mobile:~~~+91 8928532522 \\
+   \href{https://www.linkedin.com/in/arshradhanpura/}{LinkedIn:~~linkedin.com/in/arshradhanpura} \\
+     \href{https://github.com/Arsh028}{Github: ~~ github.com/Arsh028} \\
+\end{tabular*}
+
+%-----------EDUCATION-----------------
+\section{Skills Summary}
+	\resumeSubHeadingListStart
+ \vspace{2pt}
+	\resumeSubItem{Languages}{~~~~~~~~~~~Typescript, Java, C\#, JavaScript, Python. }
+	\resumeSubItem{Technical Skills}{~~~~NodeJS, NestJS, Express, Jest, MongoDB, MySQL, Kubernetes, Docker, Nginx, Postman, Firebase, Kafka, Redis, RabbitMQ, Grafana, Elastic Search, SonarQube, Azure, Langchain, LLM, Playwright, Linux, AWS. }
+
+\resumeSubHeadingListEnd
+\vspace{-8pt}
+\section{Experience}
+  \resumeSubHeadingListStart
+  \vspace{1pt}
+      \resumeSubheading{Birdeye}{}
+    {Software Development Engineer - 2 }{Jan 2025 - Present}
+    \resumeItemListStart
+        % \resumeItem{}
+        % {Built an AI-powered Reviews Intelligence platform using LLMs to automate review generation, sentiment analysis, and brand-safe responses, implementing moderation controls, \textbf{confidence scoring}, and async processing to reduce \textbf{hallucinations} and improve scalability under high review volume. \textbf{[Node.js, Puppeteer, TypeScript]}}
+            \resumeItem{}
+        {Built an AI-powered \textbf{self-healing} high-volume framework for web-scraping that auto-recovered broken DOM selectors using \textbf{deterministic heuristics}, \textbf{confidence-scored} LLM fallbacks, \textbf{human-in-the-loop} moderation, and \textbf{circuit-breaker} resilience, eliminating manual maintenance and reducing \textbf{hallucinated} fixes at scale. \textbf{[Node.js, Puppeteer, LLM]}}
+        
+
+
+        \resumeItem{}
+        {Engineered an AI-Driven Adaptive \textbf{Crawling Strategy} by integrating \textbf{LangChain} and \textbf{OpenAI}-powered agents decide crawling strategies in \textbf{realtime}, enabling adaptive, use-case-specific scraping with real-time optimization of parsing logic. \textbf{[LangChain, OpenAI, TypeScript]}}
+
+        \vspace{0.5pt}
+        % \resumeItem{}
+        % {Implemented bypass, \textbf{Session Management} and CAPTCHA Handling Implemented \textbf{proxy rotation} using custom \textbf{proxy servers}, with browser reuse and persistent \textbf{cookie storage} for \textbf{session} continuity. Successfully \textbf{bypassed} geo-restrictions and CAPTCHA challenges across multiple platforms. \textbf{[Puppeteer, Brightdata, DevTools Protocol]}}
+
+        \resumeItem{}
+        {Developed a \textbf{distributed} anti-bot \textbf{bypass} and \textbf{session orchestration} layer on web crawler, \textbf{Chrome DevTools Protocol}, and rotating residential \textbf{proxies}. Implemented persistent \textbf{browser fingerprinting}, encrypted cookie/session persistence, adaptive retry mechanisms, and \textbf{intelligent proxy rotation} to maintain session continuity and bypass CAPTCHA, geo-restrictions, and bot-detection systems across multiple platforms. \textbf{[Puppeteer, Bright Data]}}
+      \resumeItemListEnd
+
+      
+    \resumeSubheading{Bajaj Finserv Health}{}
+    {Software Development Engineer - 2 }{Dec 2023 - Jan 2025}
+    \resumeItemListStart
+          %   \resumeItem{}
+          % {Integrated and enhanced \textbf{payout calculations} by integrating the \textbf{Merchant Discount Rate (MDR)} and \textbf{subvention} functionality, focusing on the calculation of doctor \textbf{payouts} based on multiple \textbf{payment channels}. Incorporating with \textbf{Razorpay} and \textbf{Salesforce} API's, This integration aided the platform's \textbf{financial revenue} leak and saving \textbf{2\%} cost of the amount \textbf{per transaction}. \textbf{[NestJs, Typescript]}}
+          
+          \resumeItem{}{Integrated \textbf{MDR} and \textbf{subvention} based \textbf{payout calculations} across multiple payment channels by incorporating integrations with \textbf{Razorpay} and \textbf{Salesforce} APIs, enabling automated \textbf{doctor payout} reconciliation and reducing \textbf{revenue} leakage by saving \textbf{2\%} per transaction. \textbf{[NestJS, Razorpay, Salesforce]}}
+          
+
+      \resumeItem{}
+          {Architected and developed a scalable \textbf{partial Payments} system enabling split payments, receipt generation, refund \textbf{rollback} handling, and advance balance settlements, increasing online payment adoption by \textbf{33\%} and driving higher subvention revenue. \textbf{[Typescript, Apache Kafka]}}
+      
+        \resumeItem{}
+          {Established and streamlined the end-to-end process for Continuous Integration/Continuous Deployment \textbf{(CI/CD)}, encompassing the seamless integration and deployment of code repositories, automated build pipelines, and deployment workflows.\textbf{[ArgoCD, Typescript, Azure]}}
+        \vspace{0.5pt}
+
+        \resumeItem{}
+        {Architected \textbf{OAuth authentication} and authorization microservice for a multi-tenant doctors platform using \textbf{JWT} based dual-token flows, centralized \textbf{session management}, token revocation, and \textbf{concurrent} multi-device \textbf{session} control. Implemented distributed refresh deduplication and observability pipelines, enabling low-latency stateless authorization with sub \textbf{50ms P95} refresh performance at scale. \textbf{[TypeScript, JWT, OAuth 2.0, Redis]}}
+          
+      \resumeItemListEnd
+    \resumeSubheading{Bajaj Finserv Health}{}
+    {Software Development Engineer - 1}{Jun 2022 - Dec 2023}
+    \resumeItemListStart
+          
+          % \resumeItem{}
+          % {Engineered an in-house server-side WebSocket notification \textbf{microservice} employing \textbf{WebSockets}, to facilitate real-time, bidirectional communication between client-server, replacing \textbf{Twilio's} client to server notification service. Achieved cost-effectiveness by \textbf{reducing production expenses} by \textbf{18\%} per month
+          %  Ensured real-time notifications server-client using \textbf{Socket.IO} and Utilized \textbf{Apache Kafka} to enhance and streamline communication processes.}
+           
+           \resumeItem{}{Engineered an in-house real-time \textbf{notification microservice} using \textbf{WebSockets} and \textbf{Socket.IO}, replacing \textbf{Twilio}'s client-server communication service and \textbf{reducing} monthly \textbf{production costs} by \textbf{18\%}. Integrated \textbf{Apache Kafka} for scalable low latency event-driven message delivery, bidirectional communication and \textbf{reliable real-time} notifications.}
+
+            \vspace{0.5pt}
+
+           \resumeItem{}
+          {Identified high load \textbf{database queries} from \textbf{Grafana} and made \textbf{optimizations} based on query, which reduced the total load of \textbf{221.19} with \textbf{18.95} queries per second executed to \textbf{127.24} load and \textbf{6.56} QPS.}
+          
+          \vspace{0.5pt}
+          
+          \resumeItem{}{\textbf{Optimized APIs} for the gateway microservice by leveraging \textbf{Elasticsearch}-driven query analysis and performance tuning, reducing \textbf{P90 API response latency by 38\%}. Implemented security enhancements and maintained backward compatibility, significantly improving system scalability, reliability, and overall request throughput.}
+          
+          \resumeItem{}{Spearheaded \textbf{Architecture} and \textbf{development} of the \textbf{Rewards} feature within the Doctors Portal, directly resulting in a \textbf{40\%} surge in ABHA \textbf{appointments} and prescriptions from the first month since the launch of the feature.
+            \textbf{[NestJs, Azure Service Bus, Kafka]}}
+
+      \resumeItemListEnd
+    \resumeSubheading
+		{Bajaj Finserv Health}{}
+		{SDE Intern}{Jan 2022 -  June 2022}
+		\resumeItemListStart    
+
+        \resumeItem{}
+          {Transitioned the \textbf{Reporting} microservice's communication system to \textbf{Azure Service Bus} \textbf{Queue}, reducing direct DB load by \textbf{45\%}, significantly improving \textbf{fault tolerance}, reliability and \textbf{performance} for all  \textbf{asynchronous communication} between microservices for reporting events \textbf{[NestJs, Azure Service Bus]}}
+        
+        \resumeItem{}
+          {Developed a reusable \textbf{Redis-based cache library} adopted across multiple microservices, reducing average data retrieval time by \textbf{40\%} and minimizing repeated DB queries. \textbf{[Typescript, NestJS, Redis, Prometheus, Grafana]}}
+
+        \resumeItem{}{Implementation of \textbf{puppeteer scaling} using puppeteer \textbf{cluster} of \textbf{pdf generation} of invoices and prescriptions by initializing \textbf{multiple puppeteer chromium instances} that increased the throughput by \textbf{21\%}.}
+
+        \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+% \vspace{-5 pt}
+% \section{Projects}
+% \resumeSubHeadingListStart
+% \vspace{3 pt}
+% % \resumeSubItem{News-Letter - (MailChimp, NodeJs, Express) \href{https://github.com/Arsh028/news-letter}{[Link]}}{
+% %   Integrated Mailchimp API to automate personalised newsletters, sending to \textbf{500+} subscribers weekly with a \textbf{28\%} average open rate, cutting manual email prep time by 4 hrs/week.
+% % }
+
+% \resumeSubItem{News-Letter – \href{https://github.com/Arsh028/news-letter}{[Link]}}{
+%   Automated personalized newsletter distribution using NodeJS by integrating the \textbf{Mailchimp} API, reaching \textbf{500+} subscribers weekly with a \textbf{28\%} open rate, reducing manual email prep time by 4 hours.
+% }
+
+% \resumeSubItem{DevPeople – \href{https://github.com/Arsh028/DevPeople}{[Link]}}{
+%   Built a developer-centric social platform using \textbf{Node.js}, \textbf{Express}, \textbf{MongoDB}, \textbf{React}, \textbf{Redux}, and \textbf{JWT authentication}, deploying containerized \textbf{microservices}; supported \textbf{200+} users and \textbf{$<$180ms} median API latency.
+% }
+% \vspace{3pt}
+% % \resumeSubItem{DevPeople - NodeJs, Express, MongoDb, Heroku, React, Redux, JWT Auth, Microservices \href{https://github.com/Arsh028/DevPeople}{[Link]}}{
+% %   Built a developer-centric social platform with \textbf{200+} registered users, handling \textbf{5 K} posts and \textbf{10 K} comments; deployed four containerised microservices on Heroku with \textbf{99.8\%} 90-day uptime and \textbf{$<$180 ms} median API latency.
+% % }
+
+% % \vspace{-3pt}
+% % \resumeSubItem{DevPeople - (NodeJs, Express, MongoDb, JWT Authentication, Heroku, React, Redux)\href{https://github.com/Arsh028/DevPeople}{[Link]}}{
+% %  Built a developer-centric social media platform enabling profile management, interactive posts, and secure JWT authentication. Utilized microservices architecture, hosted on Heroku, with separate frontend-backend deployments.}
+
+% % \vspace{-3pt}
+% % \resumeSubItem{Convertor - (Java, Android Studio, Firebase ML API)\href{https://github.com/Arsh028/Convertor}{[Link]}}{Developed an Android app using Android Studio and Java that captures images from the device's camera and leverages the Google Firebase Machine Learning API for text recognition, displaying the extracted text as an output.}
+
+% \resumeSubHeadingListEnd
+%-----------PROJECTS-----------------
+
+
+
+
+%-----------EDUCATION-----------------
+\vspace{2pt}
+\section{~~Education}
+  \resumeSubHeadingListStart
+  \vspace{2pt}
+    \resumeSubheading
+      {Symbiosis Institute Of Technology}{Pune, India}
+      {Bachelor of Technology - Information Technology}{July 2018 - June 2022}
+      {\scriptsize \textit{ \footnotesize{\newline{}\textbf{Courses:} Operating Systems, Data Structures, Analysis Of Algorithms, Networking, Databases, Linux, scripting}}}
+    \resumeSubHeadingListEnd
+
+% below is the template
+
+% \AddToShipoutPictureBG*{
+%   \put(5,20){\parbox{\dimexpr\paperwidth - 20pt\relax}{\color{red}\fontsize{8pt}{8pt}\selectfont
+% Node.js, Golang, TypeScript, PHP, REST APIs, Enterprise Integrations, API Integrations, OAuth 2.0, JWT Authentication, Refresh Tokens, Webhooks, Webhook Architecture, API Versioning, API Deprecation, Integration Lifecycle Management, Backend Development, Distributed Systems, Microservices Architecture, Apache Kafka, Event-driven Architecture, Event Streaming, Asynchronous Processing, Message Queues, Retry Mechanisms, Rate Limiting, Idempotency, State Management, Multi-tenant Architecture, Fault Tolerance, High Availability, Scalable Systems, Production Systems, Redis, MySQL, MongoDB, SQL, NoSQL, Real-time Data Processing, Reliability Engineering, Error Handling
+%   }}
+% }
+
+% \AddToShipoutPictureBG*{
+%   \put(5,820){\parbox{\dimexpr\paperwidth - 20pt\relax}{\color{red}\fontsize{8pt}{8pt}\selectfont
+% AWS, Google Cloud Platform, Docker, Kubernetes, Containerization, CI/CD, Continuous Integration, Continuous Deployment, Unit Testing, Integration Testing, Feature Flags, Production Deployment, Observability, Monitoring, Logging, Debugging, Root Cause Analysis, Incident Resolution, SLA Management, Production Support, Enterprise Software, Cross-functional Collaboration, Customer-focused Engineering, Technical Documentation, Maintainable Systems, Secure Authentication, API Security, Service Reliability, End-to-End Ownership, Stakeholder Communication, Problem Solving, Agile Methodology, Operational Excellence
+%   }}
+% }
+
+% \AddToShipoutPictureBG*{
+%   \put(225,770){\parbox{\dimexpr\paperwidth - 230pt\relax}{\color{red}\fontsize{8pt}{8pt}\selectfont
+% AI-assisted Development, Agentic Workflows, AI Coding Tools, Multi-agent Systems, Prompt Engineering, Developer Productivity, Automation Engineering, Agent Harnesses, AI-generated Code Review, Prompt Reviews, Sandbox Testing, Evaluation Frameworks, AI-assisted Refactoring, AI-assisted Migration, Pair Programming, Code Reviews, Technical Leadership, Mentoring Engineers, Async Communication
+%   }}
+% }
+
+% \AddToShipoutPictureBG*{
+%   \put(106,690){\parbox{\dimexpr\paperwidth - 150pt\relax}{\color{red}\fontsize{8pt}{8pt}\selectfont
+% Customer Success Collaboration, Support Engineering, Sales Collaboration, Enterprise Customers, Customer Feedback, Technical Design, Reliability Metrics, API Migrations, Dependency Management
+%   }}
+% }
+
+% \AddToShipoutPictureBG*{
+%   \put(106,90){\parbox{\dimexpr\paperwidth - 150pt\relax}{\color{red}\fontsize{8pt}{8pt}\selectfont
+% Integration Architecture, Observability Stack, Tracing, Metrics, Incident Management, Edge Cases, Upstream API Changes, Enterprise Reliability, Technical Ownership
+%   }}
+% }
+
+% \AddToShipoutPictureBG*{
+%   \put(155,210){\parbox{\dimexpr\paperwidth - 160pt\relax}{\color{blue}\fontsize{8pt}{8pt}\selectfont
+% Integration Architecture, Observability Stack, Tracing, Metrics, Incident Management, Edge Cases, Upstream API Changes, Enterprise Reliability, Technical Ownership,OwnershipOwnership,Ownership Ownership,Ownership,
+%   }}
+% }
+
+% \AddToShipoutPictureBG*{
+%   \put(155,360){\parbox{\dimexpr\paperwidth - 160pt\relax}{\color{blue}\fontsize{8pt}{8pt}\selectfont
+% Integration Architecture, Observability Stack, Tracing, Metrics, Incident Management, Edge Cases, Upstream API Changes, Enterprise Reliability, Technical Ownership,OwnershipOwnership,Ownership Ownership,Ownership,
+%   }}
+% }
+
+% \AddToShipoutPictureBG*{
+%   \put(155,530){\parbox{\dimexpr\paperwidth - 160pt\relax}{\color{blue}\fontsize{8pt}{8pt}\selectfont
+% Integration Architecture, Observability Stack, Tracing, Metrics, Incident Management, Edge Cases, Upstream API Changes, Enterprise Reliability, Technical Ownership,OwnershipOwnership,Ownership Ownership,Ownership,
+%   }}
+% }
+% above is the template
+
+
+% \AddToShipoutPictureBG*{
+%   \put(5,20){\parbox{\dimexpr\paperwidth - 20pt\relax}{\color{white}\fontsize{8pt}{8pt}\selectfont
+% Enterprise Integrations, REST APIs, OAuth Flows, Webhook Design, API Versioning, API Deprecations, Integration Lifecycle Management, Distributed Systems, Event-driven Architecture, Apache Kafka, Async Processing, Retry Logic, Rate Limiting, Idempotency, State Management, Reliability Engineering, Observability, Logging, Metrics, Tracing, Incident Resolution, SLA Management, Production Support, Feature Flags, CI/CD Pipelines, Technical Documentation, Secure APIs, Customer-focused Engineering, Cross-functional Collaboration, Enterprise Reliability, Integration Patterns, Technical Ownership
+%   }}
+% }
+
+% \AddToShipoutPictureBG*{
+%   \put(5,820){\parbox{\dimexpr\paperwidth - 20pt\relax}{\color{white}\fontsize{8pt}{8pt}\selectfont
+% AI-assisted Development, Agentic Development, AI Coding Workflows, AI Agents, Agent Harnesses, Multi-agent Systems, Prompt Engineering, Prompt Reviews, AI-generated Code, AI-assisted Refactoring, AI-assisted Migration, Evaluation Frameworks, Sandbox Testing, Guardrails, Pair Programming, Developer Productivity, Async Communication, Customer Feedback Loops, Rapid Iteration, Enterprise Constraints, Long-term Maintainability, Reliability Metrics, Debugging Complex Systems, Customer Context, Error Logs, Evals, Engineering Standards
+%   }}
+% }
+
+% \AddToShipoutPictureBG*{
+%   \put(225,770){\parbox{\dimexpr\paperwidth - 230pt\relax}{\color{white}\fontsize{8pt}{8pt}\selectfont
+% Customer Success Collaboration, Support Collaboration, Sales Collaboration, Product Collaboration, Enterprise Workflows, Enterprise Deals, Customer Empathy, Technical Trade-offs, Integration Scoping, Reliability Improvements, Incident Processes, Root Cause Analysis, Technical Mentorship, Feature Leadership, Roadmap Discussions, API Standards, Auth Models, Observability Patterns, AI Tooling
+%   }}
+% }
+
+% \AddToShipoutPictureBG*{
+%   \put(106,690){\parbox{\dimexpr\paperwidth - 150pt\relax}{\color{white}\fontsize{8pt}{8pt}\selectfont
+% OAuth 2.0, JWT Authentication, Refresh Tokens, Webhook Architecture, Third-party APIs, Integration Testing, Unit Testing, Production Debugging, Error Monitoring, Retry Mechanisms, API Deprecation Handling
+%   }}
+% }
+
+% \AddToShipoutPictureBG*{
+%   \put(106,90){\parbox{\dimexpr\paperwidth - 150pt\relax}{\color{white}\fontsize{8pt}{8pt}\selectfont
+% Node.js, Golang, TypeScript, PHP, Redis, MySQL, MongoDB, SQL, NoSQL, Docker, Kubernetes, AWS, Google Cloud Platform, Kafka Consumers, Kafka Producers, Event Streaming
+%   }}
+% }
+
+% \AddToShipoutPictureBG*{
+%   \put(155,210){\parbox{\dimexpr\paperwidth - 160pt\relax}{\color{white}\fontsize{8pt}{8pt}\selectfont
+% Enterprise Integrations, API Lifecycle Management, Agentic Engineering, OAuth Flows, Webhook Systems, Production Systems, Service Reliability, Async Communication, Observability Stack, Root Cause Analysis
+%   }}
+% }
+
+% \AddToShipoutPictureBG*{
+%   \put(155,360){\parbox{\dimexpr\paperwidth - 160pt\relax}{\color{white}\fontsize{8pt}{8pt}\selectfont
+% Agent Workflows, Prompt Engineering, AI Harnesses, Multi-agent Systems, Evaluation Frameworks, Sandbox Environments, Guardrails, Shared Libraries, Internal SDKs, Platform Reliability
+%   }}
+% }
+
+% \AddToShipoutPictureBG*{
+%   \put(155,530){\parbox{\dimexpr\paperwidth - 160pt\relax}{\color{white}\fontsize{8pt}{8pt}\selectfont
+% Customer-centric Engineering, Enterprise Customers, Customer Feedback, Cross-functional Teams, Support Engineering, Product Partnerships, Technical Planning, Reliability Improvements, Scalable Integrations
+%   }}
+% }
+
+% BELOW IS OG
+% \AddToShipoutPictureBG*{
+%   \put(5,20){\parbox{\dimexpr\paperwidth - 20pt\relax}{\color{red}\fontsize{8pt}{8pt}\selectfont
+% Backend Engineering, Software Development, Product Engineering, Distributed Systems, System Design, Scalable Systems, High Availability Systems, Fault Tolerant Architecture, REST APIs, API Design, API Lifecycle Management, Service Oriented Architecture, Microservices, Event Driven Systems, Performance Optimization, Reliability Engineering, Production Systems, Software Architecture, Object Oriented Programming, Design Patterns, Data Structures, Algorithms, Technical Leadership, Feature Ownership, Product Thinking, Business Impact, Engineering Excellence, Technical Decision Making, End User Experience, Enterprise Software Development
+%   }}
+% }
+
+% \AddToShipoutPictureBG*{
+%   \put(5,820){\parbox{\dimexpr\paperwidth - 20pt\relax}{\color{red}\fontsize{8pt}{8pt}\selectfont
+% Payment Infrastructure, Online Payments, Payment Processing, Payment Gateway Systems, Fintech Platforms, Developer Platforms, API Platforms, Secure Transactions, Authentication, Authorization, Web Security, Production Reliability, Monitoring, Observability, Logging, Metrics, Incident Response, Root Cause Analysis, CI/CD Pipelines, Continuous Integration, Continuous Deployment, Automated Testing, Unit Testing, Integration Testing, Deployment Automation, Cloud Infrastructure, Service Monitoring, Operational Excellence
+%   }}
+% }
+
+% \AddToShipoutPictureBG*{
+%   \put(225,770){\parbox{\dimexpr\paperwidth - 230pt\relax}{\color{red}\fontsize{8pt}{8pt}\selectfont
+% Product Design Discussions, Architecture Discussions, Requirement Gathering, Business Requirements, Use Case Development, Product Roadmaps, Technical Tradeoffs, Product Development, User Centric Design, Customer Focus, Feature Design, Product Ownership, Stakeholder Management, Engineering Collaboration, Cross Functional Teams, Solution Architecture, Software Delivery, Product Innovation, Strategic Thinking
+%   }}
+% }
+
+% \AddToShipoutPictureBG*{
+%   \put(106,690){\parbox{\dimexpr\paperwidth - 150pt\relax}{\color{red}\fontsize{8pt}{8pt}\selectfont
+% RESTful APIs, Web Applications, Backend Services, API Security, OAuth 2.0, JWT Authentication, Request Validation, API Documentation, Service Integrations, Web Architecture, Developer Experience
+%   }}
+% }
+
+% \AddToShipoutPictureBG*{
+%   \put(106,90){\parbox{\dimexpr\paperwidth - 150pt\relax}{\color{red}\fontsize{8pt}{8pt}\selectfont
+% Java, Golang, Python, PHP, Node.js, TypeScript, Redis, MySQL, MongoDB, SQL, NoSQL, Docker, Kubernetes, AWS, Google Cloud Platform, Kafka, Event Streaming
+%   }}
+% }
+
+% \AddToShipoutPictureBG*{
+%   \put(155,210){\parbox{\dimexpr\paperwidth - 160pt\relax}{\color{red}\fontsize{8pt}{8pt}\selectfont
+% Feature Development, End to End Ownership, Product Features, Solution Design, Scalable APIs, Service Reliability, System Scalability, Performance Engineering, Production Support, Root Cause Analysis
+%   }}
+% }
+
+% \AddToShipoutPictureBG*{
+%   \put(155,360){\parbox{\dimexpr\paperwidth - 160pt\relax}{\color{red}\fontsize{8pt}{8pt}\selectfont
+% Open Source Contributions, GitHub Projects, Software Craftsmanship, Code Reviews, Engineering Best Practices, Technical Mentorship, Developer Productivity, Quality Engineering, Clean Code, Continuous Learning
+%   }}
+% }
+
+% \AddToShipoutPictureBG*{
+%   \put(155,530){\parbox{\dimexpr\paperwidth - 160pt\relax}{\color{red}\fontsize{8pt}{8pt}\selectfont
+% Product Company Experience, Startup Environment, Ownership Mindset, Innovation Driven Development, Cross Functional Collaboration, Product Strategy, Business Understanding, Customer Focus, Technical Excellence
+%   }}
+% }
+
+%  FOR BMS
+\AddToShipoutPictureBG*{
+    \put(5,20){\parbox{\dimexpr\paperwidth - 20pt\relax}{\color{white}\fontsize{8pt}{8pt}\selectfont
+  GoLang, Go Programming, Backend Engineering, Distributed Systems, Microservices Architecture, Scalable Backend Systems, High-Traffic Systems, Fault-Tolerant Systems, SaaS Architecture, Performance Optimization, System Design, Data
+  Structures, Algorithms, Software Development Engineer II, Backend Technologies, Entertainment Platform, Online Ticketing, Live Entertainment, TVOD, Transactional Video-on-Demand, BookMyShow, Big Tree Entertainment
+    }}
+  }
+
+  \AddToShipoutPictureBG*{
+    \put(5,820){\parbox{\dimexpr\paperwidth - 20pt\relax}{\color{white}\fontsize{8pt}{8pt}\selectfont
+  Software Development Engineer II, Backend Software Engineering, Scalable Distributed Systems, High-Traffic Microservices, Fault-Tolerant Architecture, SaaS Platform Engineering, System Design and Optimization, Performance Engineering,
+  Database Optimization, Redis Caching, MongoDB NoSQL, Advanced SQL Expertise, AWS Cloud Infrastructure, CI/CD Automation, Agile Engineering, Technical Leadership, Code Quality, Production Reliability, End-to-End Project Delivery
+    }}
+  }
+
+  \AddToShipoutPictureBG*{
+    \put(225,770){\parbox{\dimexpr\paperwidth - 230pt\relax}{\color{white}\fontsize{8pt}{8pt}\selectfont
+  Grafana, Prometheus, ELK Stack, Observability, Log Aggregation, Kibana, Performance Monitoring, Infrastructure Monitoring, Jenkins, ArgoCD, Deployment Automation Frameworks
+    }}
+  }
+
+  \AddToShipoutPictureBG*{
+    \put(106,690){\parbox{\dimexpr\paperwidth - 150pt\relax}{\color{white}\fontsize{8pt}{8pt}\selectfont
+  Kafka, Azure Service Bus, RabbitMQ, Message Queues, Event-Driven Systems, REST API Design, Microservice Communication, Async Architecture, Webhook Integration, Rate Limiting, Idempotency, Circuit Breakers, Retry Logic, Distributed Messaging
+    }}
+  }
+
+  \AddToShipoutPictureBG*{
+    \put(106,90){\parbox{\dimexpr\paperwidth - 150pt\relax}{\color{white}\fontsize{8pt}{8pt}\selectfont
+  NodeJS, Node.js, JavaScript, React, .NET Core, TypeScript, NestJS, Express.js, MongoDB, Redis, MySQL, NoSQL Databases, Advanced SQL, Elasticsearch, High-Performance Data Querying, AWS, Docker, Kubernetes, Git, Branching Strategies,
+  Collaborative Workflows
+    }}
+  }
+
+  \AddToShipoutPictureBG*{
+    \put(155,210){\parbox{\dimexpr\paperwidth - 160pt\relax}{\color{white}\fontsize{8pt}{8pt}\selectfont
+  End-to-End Delivery, Project Ownership, CI/CD Pipelines, Deployment Automation, Monitoring Tools, DevOps Collaboration, Agile Development, Short Release Cycles, Cross-Functional Collaboration, Code Reviews, Technical Excellence, Mentoring
+  Junior Developers, Best Engineering Practices, Clean Code, Testable Code, Maintainable Code
+    }}
+  }
+
+  \AddToShipoutPictureBG*{
+    \put(155,360){\parbox{\dimexpr\paperwidth - 160pt\relax}{\color{white}\fontsize{8pt}{8pt}\selectfont
+  Resilient Architecture Design, Scalability Engineering, High Availability, Event-Driven Architecture, Async Processing, Distributed Task Queues, Browser Automation, Puppeteer, Proxy Rotation, Session Management, LangChain, OpenAI,
+  AI-Powered Systems, Adaptive Extraction, Distributed Crawling
+    }}
+  }
+
+  \AddToShipoutPictureBG*{
+    \put(155,530){\parbox{\dimexpr\paperwidth - 160pt\relax}{\color{white}\fontsize{8pt}{8pt}\selectfont
+  Entertainment Technology, Product Collaboration, User Experience Optimization, System Efficiency, Technical Discussions, New Technologies Exploration, Performance Initiatives, Automation Culture, Engineering Ownership, Agile Environments,
+  Cross-Team Collaboration, Developer Productivity, Impact at Scale, Millions of Users
+    }}
+  }
+
+\end{document}

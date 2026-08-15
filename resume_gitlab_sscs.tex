@@ -1,0 +1,223 @@
+%------------------------
+% Resume Template
+% Author : Anubhav Singh
+% Github : https://github.com/xprilion
+% License : MIT
+%------------------------
+
+\documentclass[a4paper,20pt]{article}
+
+\usepackage{xcolor}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{eso-pic}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[absolute,overlay]{textpos}  % For absolute positioning
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.530in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.55in}
+\addtolength{\textheight}{1in}
+
+
+
+\urlstyle{rm}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-10pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-9pt}]
+
+%-------------------------
+% Custom commands
+
+\newcommand{\pointerItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{#2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItemWithoutTitle}[1]{
+  \item\small{
+    {\vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{#3} & \textit{#4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-1pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\newcommand{\invisible}[1]{\textcolor{white}{#1}}  % Invisible text command
+
+\setlength{\TPHorizModule}{1mm}
+\setlength{\TPVertModule}{1mm}
+\textblockorigin{0mm}{0mm}  % Set origin to top-left corner of the page
+
+
+%-----------------------------
+%%%%%%  CV STARTS HERE  %%%%%%
+
+\begin{document}
+\setlength{\TPHorizModule}{1mm}
+\setlength{\TPVertModule}{1mm}
+\textblockorigin{0mm}{0mm} % start from top-left corner of page
+
+
+
+
+\vspace{-60pt}
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{{\LARGE Arsh Radhanpura}} & Email: \href{mailto:arshradhanpura1@gmail.com}{arshradhanpura1@gmail.com}\\
+   & Mobile:~~~+91 8928532522 \\
+   \href{https://www.linkedin.com/in/arshradhanpura/}{LinkedIn:~~linkedin.com/in/arshradhanpura} \\
+     \href{https://github.com/Arsh028}{Github: ~~ github.com/Arsh028} \\
+\end{tabular*}
+
+%-----------SKILLS-----------------
+\section{Skills Summary}
+    \resumeSubHeadingListStart
+ \vspace{2pt}
+    \resumeSubItem{Languages}{~~~~~~~~~~~Ruby, Go (Golang), TypeScript, Java, Python.}
+    \resumeSubItem{Technical Skills}{~~~~Ruby on Rails, Go, Policy-Based Authorization, Security-Aware Engineering, Artifacts, WAF, API Design, REST APIs, GraphQL, Service Boundaries, PostgreSQL, Redis, Distributed Coordination, ActiveRecord, AASM (State Machines), Sidekiq, OAuth 2.0, JWT, Kafka, Azure Service Bus, Docker, Kubernetes, CI/CD Pipelines.}
+
+\resumeSubHeadingListEnd
+\vspace{-7pt}
+\section{Experience}
+  \resumeSubHeadingListStart
+  % \vspace{1pt}
+
+      \resumeSubheading{Birdeye}{}
+    {Software Development Engineer - 2 }{Jan 2025 - Present}
+    \resumeItemListStart
+
+        \resumeItem{}{Architected a \textbf{distributed crawler orchestration} microservice in \textbf{Ruby on Rails} coordinating \textbf{Puppeteer} workers via \textbf{Sidekiq}-backed background jobs, persisting job checkpoints to \textbf{PostgreSQL} via \textbf{ActiveRecord} for \textbf{replay-safe} recovery, and implementing \textbf{retry/backoff} through Sidekiq's retry mechanism, \textbf{circuit-breaker} resilience, and \textbf{idempotent} transactional writes so long-running jobs reconcile against live system state and survive worker failures.}
+        
+        \resumeItem{}
+        {Built an \textbf{AI-powered} \textbf{self-healing} high-volume \textbf{governance} framework for web-scraping that auto-recoveres broken DOM selectors using \textbf{deterministic heuristics}, \textbf{confidence-scored} LLM fallbacks cached in \textbf{Redis} to avoid redundant re-evaluation of known-broken selectors, \textbf{human-in-the-loop} moderation, and \textbf{circuit-breaker} resilience, eliminating manual maintenance and reducing \textbf{hallucinated} fixes at scale.}
+
+        \resumeItem{}{Engineered an AI-driven adaptive \textbf{crawling strategy} using \textbf{LangChain} and \textbf{OpenAI}-powered agents to decide crawling strategy in \textbf{realtime}, enabling adaptive, use-case-specific scraping with realtime onboarding parsing logic.}
+
+        % \vspace{0.5pt}
+
+      \resumeItemListEnd
+
+    \resumeSubheading{Bajaj Finserv Health}{}
+    {Software Development Engineer - 2 }{Dec 2023 - Jan 2025}
+    \resumeItemListStart
+
+        \resumeItem{}{Built a \textbf{rule-based policy authorization microservice} in \textbf{Ruby on Rails}, compiling role/permission rules into enforcement decisions for an \textbf{OAuth 2.0}/\textbf{JWT}-secured multi-tenant platform with centralized \textbf{session state} in \textbf{Redis} and instant \textbf{token revocation}, achieving sub-\textbf{50ms P95} refresh latency at scale.}
+
+        \resumeItem{}
+        {Integrated \textbf{MDR} and \textbf{subvention}-based \textbf{payout calculations} across payment channels in \textbf{Ruby on Rails}, enforcing \textbf{idempotency} via \textbf{ActiveRecord} unique constraints and \textbf{Sidekiq} background retries against \textbf{Razorpay} and \textbf{Salesforce} integrations, enabling automated \textbf{payout reconciliation} and reducing revenue leakage by \textbf{2\%} per transaction.}
+
+        \resumeItem{}{Architected a \textbf{partial payments} and settlement service in \textbf{Ruby on Rails} using an \textbf{AASM}-based \textbf{payment-state machine} for split payments, receipt generation, and refund \textbf{rollback}, with \textbf{ActiveRecord} transactions on \textbf{PostgreSQL} and \textbf{Redis} \textbf{distributed locks} preventing \textbf{concurrent} double-settlement, increasing payment adoption by \textbf{33\%}.}
+
+        % \vspace{0.5pt}
+
+        \resumeItem{}{Established end-to-end \textbf{CI/CD} delivery for \textbf{Ruby on Rails} microservices, retained \textbf{Azure DevOps} for \textbf{RSpec} driven build/test \textbf{CI} pipelines while migrating deployment (\textbf{CD}) to \textbf{ArgoCD}-based \textbf{GitOps} continuous reconciliation, \textbf{containerizing} services with \textbf{Docker} and deploying to \textbf{Kubernetes}, using Git as the single source of truth for cluster state to enable automated \textbf{drift correction}, \textbf{progressive rollouts} (\textbf{canary}/\textbf{blue-green}), and declarative rollback.}
+
+    \resumeItemListEnd
+
+    \resumeSubheading{Bajaj Finserv Health}{}
+    {Software Development Engineer - 1}{Jun 2022 - Dec 2023}
+    \resumeItemListStart
+
+        \resumeItem{}{Engineered a real-time \textbf{event-driven notification microservice} in \textbf{Ruby on Rails} using \textbf{Action Cable} (\textbf{Redis} pub/sub) and \textbf{Apache Kafka}, replacing a third-party vendor and \textbf{reducing} monthly costs by \textbf{18\%} while improving reliability under \textbf{high concurrency} via \textbf{Sidekiq} workers and channel-based fan-out.}
+
+        % \vspace{0.5pt}
+
+        \resumeItem{}{Identified high-load \textbf{database queries} via \textbf{Grafana} and applied query optimizations, index tuning, and restructuring on \textbf{PostgreSQL}, reducing total DB load from \textbf{221.19} to \textbf{127.24} and throughput from \textbf{18.95} to \textbf{6.56} QPS.}
+
+        % \vspace{0.5pt}
+
+        \resumeItem{}{\textbf{Optimized GraphQL APIs} for a \textbf{Ruby on Rails} gateway microservice by leveraging \textbf{Elasticsearch} query analysis and performance tuning, reducing \textbf{P90 API response latency by 38\%}. Implemented \textbf{WAF} security enhancements, significantly improving system scalability, reliability, and overall request throughput.}
+
+        \resumeItem{}{Spearheaded \textbf{architecture} and development of the \textbf{Rewards} feature within the Doctors Portal in \textbf{Ruby on Rails}, consuming appointment-completion events off \textbf{Apache Kafka} and processing reward eligibility \textbf{asynchronously} through a \textbf{Sidekiq}-based job queue to decouple high-frequency appointment events from reward computation, directly resulting in a \textbf{40\%} surge in appointments and prescriptions within the first month of launch.}
+
+    \resumeItemListEnd
+
+    \resumeSubheading
+        {Bajaj Finserv Health}{}
+        {SDE Intern}{Jan 2022 - June 2022}
+        \resumeItemListStart
+
+        \resumeItem{}
+        {Transitioned the Ruby on rails \textbf{Reporting} microservice's communication to async using  \textbf{Azure Service Bus Queue} and \textbf{Sidekiq}, reducing direct DB load by \textbf{45\%} and significantly improving \textbf{fault tolerance}, reliability, and \textbf{performance} for all \textbf{asynchronous} inter-service communication for reporting events.}
+
+        \resumeItem{}{Built and published a reusable \textbf{Redis caching} library as a versioned internal \textbf{Ruby gem artifact}, distributed across \textbf{Rails} microservices via a private \textbf{package registry}, reducing data retrieval time by \textbf{40\%}.}
+
+        \resumeItem{}{Scaled a \textbf{worker-pool} based PDF generation service using concurrent \textbf{goroutines} to parallelize rendering across multiple \textbf{Chromium} instances, increasing throughput by \textbf{21\%}.}
+
+        \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------------
+\vspace{2pt}
+\section{~~Education}
+  \resumeSubHeadingListStart
+  \vspace{2pt}
+    \resumeSubheading
+      {Symbiosis Institute Of Technology}{Pune, India}
+      {Bachelor of Technology - Information Technology}{July 2018 - June 2022}
+      {\scriptsize \textit{ \footnotesize{\newline{}\textbf{Courses:} Operating Systems, Data Structures, Analysis Of Algorithms, Networking, Databases, Linux, Scripting}}}
+    \resumeSubHeadingListEnd
+
+
+\AddToShipoutPictureBG*{
+  \put(3,825){\parbox{\dimexpr\paperwidth - 20pt\relax}{\color{red}\fontsize{8pt}{8pt}\selectfont
+Ruby on Rails, Go, REST APIs, GraphQL, PostgreSQL, Schema Design, Query Optimization, Indexing Strategies, Redis, Distributed Coordination, Software Supply Chain Security, SLSA, SBOM, Artifact Signing, Artifact Verification, Provenance Attestation, Sigstore, Cosign, Keyless Signing, OpenID Connect (OIDC), Signing Key Lifecycle Management, Policy Enforcement, Policy-as-Code, YAML, Rules Engine, Package Policy Evaluation Engine, Dependency Firewall, Delivery Systems, Ruby on Rails, Cross-Functional Collaboration, Async-First Remote Collaboration
+  }}
+}
+
+\AddToShipoutPictureBG*{
+  \put(225,770){\parbox{\dimexpr\paperwidth - 230pt\relax}{\color{red}\fontsize{8pt}{8pt}\selectfont
+Go, Distributed Systems, Continuous Delivery, Continuous Deployment, Release Orchestration, Deployment Automation, Durable Workflow Execution, State Persistence, Replay Patterns, Reconciliation, Live State Awareness, Durable Orchestration, Docker, Kubernetes, Progressive Delivery, Blue/Green Deployment, Canary Deployment, GitOps, Event-Driven Architecture, Policy-Based Governance, AI-Native Governance, AI-Integrated Engineering, DevSecOps, Microservices,
+  }}
+}
+
+\AddToShipoutPictureBG*{
+\put(10,25){\parbox{\dimexpr\paperwidth -30pt\relax}{\color{red}\fontsize{8pt}{8pt}\selectfont
+ Malicious Package Detection, DevSecOps, Security Policy Framework, Policy Inheritance, Trust Boundaries, Input Validation, Failure Mode Analysis, Security-First Engineering, RSpec, Integration Testing, Test Reliability, Merge Request Review, API Design, Service Boundaries, Cryptographic Signing, Package Ecosystems, Registry Systems, Platform Engineering, Enterprise Security, Compliance, Risk Management, GitOps, System Design, Architectural Design, Greenfield Development, Code Review, Mentorship, On-Call, Scalability, High-Performance Systems, Enterprise-Grade 
+  }}
+}
+
+\end{document}

@@ -1,0 +1,263 @@
+%------------------------
+% Resume Template
+% Author : Anubhav Singh
+% Github : https://github.com/xprilion
+% License : MIT
+%------------------------
+
+\documentclass[a4paper,20pt]{article}
+
+\usepackage{xcolor}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{eso-pic}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[absolute,overlay]{textpos}  % For absolute positioning
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.530in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.55in}
+\addtolength{\textheight}{1in}
+
+
+
+\urlstyle{rm}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-10pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-9pt}]
+
+%-------------------------
+% Custom commands
+
+\newcommand{\pointerItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{#2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItemWithoutTitle}[1]{
+  \item\small{
+    {\vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{#3} & \textit{#4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-1pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\newcommand{\invisible}[1]{\textcolor{black}{#1}}  % Invisible text command
+
+\setlength{\TPHorizModule}{1mm}
+\setlength{\TPVertModule}{1mm}
+\textblockorigin{0mm}{0mm}  % Set origin to top-left corner of the page
+
+
+%-----------------------------
+%%%%%%  CV STARTS HERE  %%%%%%
+
+\begin{document}
+\setlength{\TPHorizModule}{1mm}
+\setlength{\TPVertModule}{1mm}
+\textblockorigin{0mm}{0mm} % start from top-left corner of page
+
+
+
+
+\vspace{-70pt}
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{{\LARGE Arsh Radhanpura}} & Email: \href{mailto:arshradhanpura1@gmail.com}{arshradhanpura1@gmail.com}\\
+   & Mobile:~~~+91 8928532522 \\
+   \href{https://www.linkedin.com/in/arshradhanpura/}{LinkedIn:~~linkedin.com/in/arshradhanpura} \\
+     \href{https://github.com/Arsh028}{Github: ~~ github.com/Arsh028} \\
+\end{tabular*}
+
+%-----------SKILLS-----------------
+\section{Skills Summary}
+    \resumeSubHeadingListStart
+ \vspace{1.5pt}
+    \resumeSubItem{Languages:}{~~~~~~~~Go (Golang), TypeScript, Java, C\#, Python.}
+    \vspace{-1pt}
+    \resumeSubItem{Technical Skills:}{~Distributed Systems, Kubernetes, Docker, GitOps (ArgoCD), Progressive Delivery (Canary/Blue-Green), Event-Driven Architecture, Kafka, Azure Service Bus, RabbitMQ, gRPC, REST APIs, AI Governance, MongoDB, MySQL, Redis, Elasticsearch, Grafana, Prometheus, CI/CD Pipelines, AI-assisted Engineering (LLM Agents), AWS.}
+
+\resumeSubHeadingListEnd
+\vspace{-5.9pt}
+\section{Experience}
+  \resumeSubHeadingListStart
+  \vspace{1pt}
+      \resumeSubheading{Birdeye}{}
+    {Software Development Engineer - 2 }{Jan 2025 - Present}
+    \resumeItemListStart
+        \resumeItem{}
+        {Architected a \textbf{distributed crawler orchestration} engine in \textbf{Go} coordinating a fleet of \textbf{Puppeteer} workers via \textbf{Chrome DevTools Protocol}, implementing \textbf{state persistence}, \textbf{replay-safe} checkpointing, \textbf{retry/backoff} and \textbf{circuit-breaker} resilience, \textbf{idempotent} recovery so long-running jobs reconcile against live system state and survive worker failures patterns. \textbf{[Golang, PostgreSQL]}}
+        
+        \resumeItem{}
+        {Built an AI-powered \textbf{self-healing} high-volume \textbf{governance} framework for web-scraping that auto-recoveres broken DOM selectors using \textbf{deterministic heuristics}, \textbf{confidence-scored} LLM fallbacks, \textbf{human-in-the-loop} moderation, and \textbf{circuit-breaker} resilience, eliminating manual maintenance and reducing \textbf{hallucinated} fixes at scale. \textbf{[Node.js, Puppeteer, LLM]}}
+
+        \resumeItem{}
+        {Engineered an AI-Driven Adaptive \textbf{Crawling Strategy} by integrating \textbf{LangChain} and \textbf{OpenAI}-powered \textbf{agents} decide crawling strategies in \textbf{realtime}, enabling adaptive, use-case-specific scraping with real-time onboarding of parsing logic. \textbf{[LangChain, OpenAI]}}
+
+        
+      \resumeItemListEnd
+
+
+    \resumeSubheading{Bajaj Finserv Health}{}
+    {Software Development Engineer - 2 }{Dec 2023 - Jan 2025}
+    \resumeItemListStart
+          \resumeItem{}{Built \textbf{payments} microservice and integrated \textbf{MDR} and \textbf{subvention} based \textbf{payout calculations} across multiple payment channels in \textbf{Golang} by incorporating integrations with \textbf{Razorpay} and \textbf{Salesforce} APIs, enabling automated \textbf{doctor payout} reconciliation and reducing \textbf{revenue} leakage by saving \textbf{2\%} per transaction. \textbf{[Golang, Razorpay]}}
+
+          \vspace{1pt}
+
+        \resumeItem{}{Architected a \textbf{partial payments} and settlement service in \textbf{Go} consuming payment-state events off \textbf{Apache Kafka}, driving split payments, receipt generation, and refund \textbf{rollback} through an explicit \textbf{payment-state machine} with database \textbf{transactional} updates and \textbf{Redis} \textbf{distributed locks} to prevent \textbf{concurrent} double-settlement on advance-balance reconciliation, increasing online payment adoption by \textbf{33\%}. \textbf{[Go, Apache Kafka, Redis]}}
+
+        \vspace{1pt}
+
+           \resumeItem{}
+        {Established \textbf{CI/CD} delivery in \textbf{Azure DevOps} for build/test \textbf{CI} pipelines and migrating deployment (\textbf{CD}) from Azure release pipelines to \textbf{ArgoCD} based \textbf{GitOps} continuous reconciliation, using Git as the single source of truth for cluster state enabling automated \textbf{drift correction}, \textbf{progressive rollouts} (\textbf{canary}/\textbf{blue-green}), and \textbf{rollbacks}.}
+
+        \vspace{1pt}
+ 
+        \resumeItem{}
+        {Architected an \textbf{OAuth authentication} and authorization microservice in \textbf{Go} for a multi-tenant platform using \textbf{JWT} dual-token flows, centralized \textbf{session state}, \textbf{token revocation}, \textbf{RBAC} roles and \textbf{concurrent} multi-device session control, achieving sub-\textbf{50ms P95} refresh latency at scale. \textbf{[Go, JWT, OAuth 2.0, Redis]}}
+
+\vspace{-1pt}
+      \resumeItemListEnd
+    \resumeSubheading{Bajaj Finserv Health}{}
+    {Software Development Engineer - 1}{Jun 2022 - Dec 2023}
+    \resumeItemListStart
+
+           \resumeItem{}{Engineered an in-house real-time \textbf{event-driven notification microservice} in \textbf{Go} using \textbf{WebSockets} and \textbf{Apache Kafka}, replacing a third-party vendor and \textbf{reducing} monthly production costs by \textbf{18\%} while improving delivery reliability under high \textbf{concurrency} via \textbf{goroutines} and channel-based fan-out.}
+
+            
+
+           \resumeItem{}
+          {Diagnosed and resolved high-load \textbf{database queries} via \textbf{Grafana} driven profiling, reducing total system load from \textbf{221.19} to \textbf{127.24} and query throughput from \textbf{18.95} to \textbf{6.56} QPS. \textbf{[Grafana, Prometheus, MongoDb]}}
+
+          \vspace{1pt}
+
+          
+
+          \resumeItem{}{\textbf{Optimized APIs} for the gateway microservice by leveraging \textbf{Elasticsearch} driven query analysis and performance tuning, reducing \textbf{P90 API response latency by 38\%}. Implemented \textbf{WAF} security enhancements, significantly improving system scalability, reliability, and overall request throughput.}
+
+          \resumeItem{}{Architecture of the \textbf{Rewards} feature on the Doctors Portal in \textbf{Go}, consuming events off \textbf{Kafka}/\textbf{Azure Service Bus} via a \textbf{goroutine}-based consumer pool to decouple reward computation from the booking path, with \textbf{idempotent} event processing and a stateful eligibility pipeline driving a \textbf{40\%} surge in appointment creation and prescription generation volume within the first month post-launch. \textbf{[Go, Kafka, Azure Service Bus]}}
+
+      \resumeItemListEnd
+    \resumeSubheading
+        {Bajaj Finserv Health}{}
+        {SDE Intern}{Jan 2022 -  June 2022}
+        \resumeItemListStart
+
+        \resumeItem{}
+          {Migrated the \textbf{Reporting} microservice's inter-service communication to \textbf{Azure Service Bus} \textbf{queues}, reducing direct DB load by \textbf{45\%} and improving \textbf{fault tolerance} for asynchronous cross-service events. \textbf{[Go, Azure Service Bus]}}
+
+        \resumeItem{}
+          {Built a reusable \textbf{Redis-based caching} library adopted across multiple microservices, cutting average data retrieval latency by \textbf{40\%}. \textbf{[Go, Redis, Prometheus, Grafana]}}
+
+        \resumeItem{}{Scaled a \textbf{worker-pool} based PDF generation service using concurrent \textbf{goroutines} to parallelize rendering across multiple \textbf{Chromium} instances, increasing throughput by \textbf{21\%}. \textbf{[Go, Concurrency]}}
+
+        \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------------
+\vspace{0.5pt}
+\section{~~Education}
+  \resumeSubHeadingListStart
+  % \vspace{1pt}
+    \resumeSubheading
+      {Symbiosis Institute Of Technology}{Pune, India}
+      {Bachelor of Technology - Information Technology}{July 2018 - June 2022}
+      {\scriptsize \textit{ \footnotesize{\newline{}\textbf{Courses:} Operating Systems, Data Structures, Analysis Of Algorithms, Networking, Databases, Linux, scripting}}}
+    \resumeSubHeadingListEnd
+
+\AddToShipoutPictureBG*{
+  \put(3,825){\parbox{\dimexpr\paperwidth - 20pt\relax}{\color{white}\fontsize{8pt}{8pt}\selectfont
+Go, Golang, Senior Backend Engineer, Backend Services in Go, Go Best Practices, Distributed Systems, Distributed Systems Architecture, Continuous Deployment, Continuous Delivery, CD Platform, Release Orchestration, Deployment Automation at Scale, Durable Workflow Execution, State Persistence, Replay Patterns, Durable Orchestration, Greenfield Codebase, Architectural Patterns, GitLab Deploy Stage
+  }}
+}
+
+\AddToShipoutPictureBG*{
+  \put(225,770){\parbox{\dimexpr\paperwidth - 230pt\relax}{\color{white}\fontsize{8pt}{8pt}\selectfont
+GitLab, DevSecOps, Verify Stage, Runner, Infrastructure Team, High-Visibility Product Area, Fortune 100, Enterprise Customers, Principal Engineer Collaboration, Engineering Manager Partnership
+  }}
+}
+
+\AddToShipoutPictureBG*{
+  \put(110,680){\parbox{\dimexpr\paperwidth - 480pt\relax}{\color{white}\fontsize{8pt}{8pt}\selectfont
+REST APIs, gRPC, JWT, OAuth 2.0, RBAC, API Design, Secure APIs, Authentication, Authorization, Multi-Tenant Architecture, Session Management, Token Revocation, Web Security, Service Boundaries
+  }}
+}
+
+\AddToShipoutPictureBG*{
+  \put(155,520){\parbox{\dimexpr\paperwidth - 428pt\relax}{\color{white}\fontsize{8pt}{8pt}\selectfont
+AI Tools in Engineering Workflow, AI-Assisted Engineering, AI Engineering, AI-Integrated Product Features, Productivity Multiplier, Cross-Functional Collaboration, Product Management, UX Collaboration, Async-First
+  }}
+}
+
+\AddToShipoutPictureBG*{
+  \put(155,345){\parbox{\dimexpr\paperwidth - 160pt\relax}{\color{white}\fontsize{8pt}{8pt}\selectfont
+Circuit Breakers, Retry and Backoff, Idempotency, State Machines, Distributed Locks, Replay-Safe Checkpointing, Self-Healing Systems, Human-in-the-Loop, Chrome DevTools Protocol, Puppeteer, Node.js, TypeScript, LangChain, OpenAI
+  }}
+}
+
+\AddToShipoutPictureBG*{
+  \put(5,20){\parbox{\dimexpr\paperwidth - 400pt\relax}{\color{white}\fontsize{8pt}{8pt}\selectfont
+AI-Native Governance, True Reconciliation, State Reconciliation, Live State Awareness, Event-Driven Architecture, Policy-Based Governance, Enterprise-Grade Delivery Systems, Scalable Backend Systems, High-Performance Systems, Secure Systems, Well-Tested Systems, Reliability Engineering, Fault-Tolerant Systems, Production Systems, System Design, Software Architecture, Backend Engineering
+  }}
+}
+
+\AddToShipoutPictureBG*{
+  \put(155,180){\parbox{\dimexpr\paperwidth - 160pt\relax}{\color{white}\fontsize{8pt}{8pt}\selectfont
+End-to-End Ownership, Feature Ownership, Code Review, Engineering Standards, Design Through Deployment, Iterative Refinement, Feasibility Assessment, Architectural Decisions, Mentorship, Junior Engineers, Intermediate Engineers, On-Call Rotations, Troubleshooting, Urgent Engineering Issues
+  }}
+}
+
+\AddToShipoutPictureBG*{
+  \put(8,25){\parbox{\dimexpr\paperwidth - 30pt\relax}{\color{white}\fontsize{8pt}{8pt}\selectfont
+Kubernetes, Docker, GitOps, GitOps Workflows, ArgoCD, Helm, Progressive Delivery, Blue-Green Deployment, Canary Deployment, Kafka, PostgreSQL, MySQL, MongoDB, Elasticsearch, Grafana, Prometheus, CI/CD Pipelines, Cluster Reconciliation
+  }}
+}
+
+
+
+\end{document}
+
