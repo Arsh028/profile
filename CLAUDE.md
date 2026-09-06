@@ -7,16 +7,15 @@ I am a Software Development Engineer - 2 currently working at [Birdeye](https://
 I work within the Aggregation Team, focused on large-scale browser automation, distributed web crawling, and data aggregation systems that power products such as Listings AI and Search AI.
 
 My primary expertise lies in:
-- Distributed Crawling Systems
+- high-throughput distributed backend infrastructure
 - Browser Automation
-- Puppeteer Infrastructure
 - Scalable Microservices
 - Event-Driven Architectures
 - AI-driven Crawling Strategies
 - Performance Optimization
 - scalable Agentic AI
 
-I have strong experience building scalable backend systems using Node.js, NestJS, and TypeScript, along with distributed communication using Kafka, RabbitMQ and Azure Service Bus. I also work extensively with MongoDB, MySQL, Redis, Elasticsearch, Grafana, Prometheus, and cloud-native monitoring systems.
+I have strong experience building scalable backend systems from scratch using Node.js, NestJS, and TypeScript, along with distributed communication using Kafka, RabbitMQ and Azure Service Bus. I also work extensively with MongoDB, MySQL, PostgreSQL Redis, Elasticsearch, Grafana, Prometheus, and cloud-native monitoring systems.
 
 ---
 
@@ -32,7 +31,7 @@ Birdeye is a B2B Agentic AI marketing platform that enables enterprise businesse
 - Business Intelligence
 - AI-powered marketing workflows
 
-Example enterprise customers include multi-location brands such as Domino’s.
+Example enterprise customers include multi-location brands such as Aspen Dental.
 
 Products include:
 - Reviews AI
@@ -61,7 +60,7 @@ The crawled data is used for:
 - Competitive intelligence
 - Search visibility improvements
 - Business listing enrichment
-- SEO insights
+- SEO and AEO insights
 - AI-powered marketing recommendations
 
 ---
@@ -69,7 +68,7 @@ The crawled data is used for:
 ## Key Technical Contributions
 
 ### Distributed Crawling Architecture
-Architected scalable distributed crawlers capable of aggregating data from platforms such as:
+Architected scalable distributed crawlers capable of aggregating data from platforms for example:
 - Google
 - Amazon
 - Walmart
@@ -87,7 +86,6 @@ Tech Stack:
 - TypeScript
 - Redis
 - Mysql
-- coralogix
 
 ---
 
@@ -137,8 +135,7 @@ Worked with:
 ### Databases
 - MongoDB
 - MySQL
-  - MySQL is primarily used for crawler audit data and tracking
-  - MongoDB is used for operational product features
+- PostgreSQL
 
 ### Distributed Systems
 - Kafka
@@ -168,11 +165,11 @@ Worked with:
 - SDE 2
 
 Worked extensively on:
-- Healthcare backend systems
-- Billing and paymwent systems
+- Backend facade microservices systems
+- Billing and payment systems
 - Reporting systems
 - Payment infrastructure
-- EMR systems
+- Authentication systems
 - Notification systems
 - Performance optimization
 - websockets
@@ -224,7 +221,7 @@ Optimized:
 - API response times
 
 Results:
-- Reduced DB load significantly
+- Reduced DB load significantly from 221.19 to 127.24
 - Reduced QPS from 18.95 to 6.56
 - Improved P90 API response times by 38%
 
@@ -258,7 +255,7 @@ Scaled Puppeteer-based PDF generation systems by:
 
 Impact:
 - Increased throughput by 21%
-- Reduced failure rates significantly
+- Reduced failure rates to 0.
 
 ---
 
@@ -269,7 +266,6 @@ Impact:
 - JavaScript
 - Java
 - Python
-- C#
 
 ---
 
@@ -278,6 +274,7 @@ Impact:
 - NestJS
 - Express.js
 - Spring Boot
+- Golang
 
 ---
 
@@ -294,6 +291,7 @@ Impact:
 - MySQL
 - Redis
 - Elasticsearch
+- PostgreSQL
 
 ---
 
@@ -320,7 +318,7 @@ Impact:
 - Prometheus
 - ELK Stack
 - CI/CD pipelines
-
+- Jenkins
 ---
 
 # Engineering Strengths
@@ -329,10 +327,9 @@ Impact:
 - Scalable backend systems
 - Distributed architectures
 - Browser automation
-- High-throughput crawling systems
+- High-throughput backend systems
 - Event-driven systems
 - Microservice architecture
-- Reliability engineering
 - Performance optimization
 - Production monitoring
 - AI-integrated backend systems
@@ -344,7 +341,7 @@ Impact:
 My profile should emphasize:
 - Ownership and architecture contributions
 - Distributed systems expertise
-- Large-scale crawling infrastructure
+- Large-scale backend infrastructure
 - AI-integrated engineering systems
 - Backend scalability
 - High-performance systems
@@ -396,7 +393,6 @@ Session Management
 Async Processing  
 Data Aggregation  
 Search Infrastructure  
-SEO Intelligence  
 Business Intelligence
 
 ---
