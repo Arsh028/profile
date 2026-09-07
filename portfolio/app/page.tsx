@@ -9,6 +9,7 @@ import { EngineeringImpact } from "@/components/EngineeringImpact";
 import { Contact } from "@/components/Contact";
 import { Footer } from "@/components/Footer";
 import { ScrollToTop } from "@/components/ScrollToTop";
+import { ScrollAnalytics } from "@/components/ScrollAnalytics";
 import { Analytics } from "@vercel/analytics/next"
 
 interface HomeProps {
@@ -22,6 +23,7 @@ export default async function Home({ searchParams }: HomeProps) {
   return (
     <div className="flex min-h-screen flex-col">
         <Analytics />
+        <ScrollAnalytics />
       <Navbar name={content.name} />
       <main className="flex-1">
         <Hero content={content} />
