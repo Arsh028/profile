@@ -3,7 +3,7 @@ import { ProfileContent } from '../types';
 export const defaultProfile: ProfileContent = {
   variant: 'default',
   name: 'Arsh Radhanpura',
-  title: 'Software Development Engineer',
+  title: 'Software Development Engineer @ Birdeye',
   tagline: 'Backend Engineer — Designing For Scale & Speed',
   taglineHighlight: 'Scale & Speed',
   companyHighlight: {
