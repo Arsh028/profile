@@ -519,5 +519,5 @@ export const defaultProfile: ProfileContent = {
     { label: 'Phone', url: 'tel:+918928532522', icon: 'phone' },
   ],
   resumeUrl:
-    'https://drive.google.com/file/d/1jwQrloxE9LFWXearDu8SDFmD4oxp-BbG/view?usp=sharing',
+    'https://drive.google.com/file/d/1DsS0nzdgy_xS9gW_F9hOt-WK6RoW22vb/view',
 };
