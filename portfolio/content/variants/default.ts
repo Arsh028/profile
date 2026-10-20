@@ -240,7 +240,7 @@ export const defaultProfile: ProfileContent = {
       isCurrent: false,
       remote: false,
       summary:
-        'Progressed from SDE 1 to SDE 2, architecting backend systems across payments, Billing, authentication, real-time notifications, reporting, and performance engineering.',
+        'Architected backend systems across payments, billing, authentication, real-time notifications, reporting, and performance engineering for a healthcare platform serving millions of requests.',
       responsibilities: [
         'Architected **payment orchestration and partial payments** systems supporting payouts, refunds, split payments, settlements, and subvention workflows.',
         'Designed a **multi-tenant OAuth authentication platform** with JWT dual-token flows, session management, token revocation, and distributed refresh deduplication.',
